@@ -97,8 +97,7 @@ Bloque C (60 min) → Ejercicio individual + Mini reto + errores comunes / códi
 ```
 curso-automatizacion-apis-performance-seguridad/
 ├── PLAN_MAESTRO.md            ← este documento
-├── sesiones/                  ← material clase por clase (se genera bajo demanda)
-│   └── sesion-01/ … sesion-10/
+├── SETUP_ESTUDIANTES.md       ← guía de instalación para estudiantes
 ├── proyecto-integrador/       ← Puerta de Calidad de Release (crece cada sesión)
 │   ├── trazabilidad/          ← matriz de trazabilidad (S1)
 │   ├── api-tests/             ← Postman/Newman, Karate, Pact (S3-S4)

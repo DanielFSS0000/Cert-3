@@ -43,9 +43,7 @@ curso-automatizacion/
 ├── PLAN_MAESTRO.md
 ├── Taskfile.yml
 ├── .gitignore
-├── sesiones/
-│   └── sesion-01/
-│       └── SESION_01.md
+├── SETUP_ESTUDIANTES.md       ← este documento
 └── proyecto-integrador/
     ├── trazabilidad/
     │   └── matriz-trazabilidad.csv
