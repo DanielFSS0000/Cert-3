@@ -11,6 +11,8 @@ REQ-DSC-005,order_total debe estar en (0; 10000],TC-DSC-INV-003,Partición invá
 REQ-MTX-001,La matriz cross-browser cubre todos los pares exigibles de parámetros,TC-PW-001,Pairwise reduce el producto cartesiano respetando restricciones,Pruebas combinatorias (pairwise),tests/test_pairwise.py,PASS,
 REQ-MTX-001,La matriz cross-browser cubre todos los pares exigibles de parámetros,TC-PW-002,Gap analysis: ningún par exigible queda sin cubrir tras complementar,Pruebas combinatorias (pairwise),tests/test_pairwise.py,PASS,DEF-001
 DEF-001,allpairspy con filter_func sacrifica pares válidos (chromium/firefox × macos) — mitigado con pairwise_matrix.py,,,,design_lab/pairwise_matrix.py,CERRADO,
-REQ-LOG-001,POR COMPLETAR (Ejercicio individual S1 — login de SauceDemo),,,,,PENDIENTE,
-REQ-LOG-002,POR COMPLETAR (Ejercicio individual S1 — login de SauceDemo),,,,,PENDIENTE,
-REQ-LOG-003,POR COMPLETAR (Ejercicio individual S1 — login de SauceDemo),,,,,PENDIENTE,
+REQ-LOG-001,Usuarios activos con credenciales válidas deben iniciar sesión correctamente,TC-LOG-EP-013,Login válido con standard_user y secret_sauce debe redirigir al inventario,Partición de equivalencias,tests/test_login.py,PENDIENTE,
+REQ-LOG-001,Usuarios activos con credenciales válidas deben iniciar sesión correctamente,TC-LOG-EP-014,Login válido con problem_user y secret_sauce debe redirigir al inventario,Partición de equivalencias,tests/test_login.py,PENDIENTE,
+REQ-LOG-002,Usuario bloqueado no debe poder iniciar sesión aunque use contraseña válida,TC-LOG-DT-015,Login con locked_out_user y secret_sauce debe mostrar error de usuario bloqueado,Tabla de decisión,tests/test_login.py,PENDIENTE,
+REQ-LOG-003,El login debe rechazar campos obligatorios vacíos,TC-LOG-BVA-016,Login con usuario y contraseña vacíos debe mostrar error de username requerido,Boundary + partición inválida,tests/test_login.py,PENDIENTE,
+REQ-LOG-003,El login debe rechazar credenciales inválidas,TC-LOG-INV-017,Login con standard_user y clave incorrecta debe mostrar error de credenciales inválidas,Partición de equivalencias inválida,tests/test_login.py,PENDIENTE,
