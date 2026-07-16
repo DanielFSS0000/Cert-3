@@ -21,32 +21,19 @@
 | Diseño de pruebas | Partición de equivalencias (*Equivalence Partitioning*, EP), análisis de valores límite (*Boundary Value Analysis*, BVA), tablas de decisión y pruebas combinatorias | Matriz de trazabilidad + laboratorios ejecutables |
 | Scripts / Patrones | Page Object Model (POM), Screenplay, Don't Repeat Yourself (DRY) · Lenguajes: Java, Python, JavaScript, C# | Laboratorios con Python como lenguaje base; ejemplos comparados en los 4 lenguajes |
 | Datos externos | JSON (*JavaScript Object Notation*), YAML (*YAML Ain't Markup Language*), CSV (*Comma-Separated Values*), bases de datos y mocks | Capa de datos desacoplada de la lógica de pruebas |
-<<<<<<< HEAD
-| APIs | Postman (colecciones)/Newman, REST-assured, Karate DSL, Pact | APIs públicas de práctica |
-=======
 | APIs | Postman (colecciones) + Newman/Postman CLI, REST-assured, Karate DSL, Pact | APIs públicas de práctica |
->>>>>>> upstream/main
 | CI/CD | GitHub Actions, Jenkins, GitLab CI, Azure Pipelines · Docker (Selenium Grid, Playwright, Cypress) | Flujo automatizado del proyecto integrador con disparadores por push, Pull Request y ejecución nocturna |
 | Performance | K6, JMeter (+ Gatling vía Karate) | Scripts de carga como infraestructura como código |
 | Seguridad | OWASP ZAP (*Open Worldwide Application Security Project Zed Attack Proxy*), Burp Suite | Escaneo automatizado de seguridad base |
 | Accesibilidad | Axe, Lighthouse, WCAG (*Web Content Accessibility Guidelines*) | Auditorías automatizadas de accesibilidad |
-<<<<<<< HEAD
-| Compatibilidad | BrowserStack, SauceLabs, CrossBrowserTesting | Matriz de compatibilidad entre navegadores (cuentas gratuitas o demos) |
-| Móvil / Escritorio | Appium, Espresso, XCUITest, FlaUI, Pywinauto | Labs en emulador + estrategia emulador vs dispositivo real |
-| Regresión visual | Applitools, Percy, Chromatic, Recheck | Línea base visual + comparación asistida por IA, diseño responsivo y modo oscuro |
-| Mantenimiento | Healenium, Testim (autorreparación o *auto-healing*) · Stryker JavaScript/TypeScript, PIT Java (pruebas de mutación o *Mutation Testing*) | Reducción de pruebas inestables + calidad del conjunto de pruebas más allá de la cobertura |
-=======
 | Compatibilidad | BrowserStack, SauceLabs, LambdaTest | Matriz de compatibilidad entre navegadores (cuentas gratuitas o demos) |
 | Móvil / Escritorio | Appium, Maestro, Espresso, XCUITest, FlaUI, Pywinauto | Labs en emulador + estrategia emulador vs dispositivo real |
 | Regresión visual | Applitools, Percy, Chromatic · comparación visual nativa de Playwright (`toHaveScreenshot`) | Línea base visual + comparación asistida por IA, diseño responsivo y modo oscuro |
 | Mantenimiento | Healenium (autorreparación o *auto-healing*) + reparación de selectores asistida por IA generativa · Stryker JavaScript/TypeScript, PIT (Java), mutmut (Python) — pruebas de mutación (*Mutation Testing*) | Reducción de pruebas inestables + calidad del conjunto de pruebas más allá de la cobertura |
->>>>>>> upstream/main
 | Tooling base | — | `uv` (Python), `pnpm` (JS), `Taskfile`, `Git`, `Docker` como herramientas de ejecución y estandarización |
 
 **Sobre qué practicamos:** aplicaciones públicas de práctica — **SauceDemo** (https://www.saucedemo.com) para todo lo relacionado con interfaz de usuario, y APIs públicas de entrenamiento para los ejercicios de servicios.
 
-<<<<<<< HEAD
-=======
 > **Herramientas del temario original actualizadas a 2026:**
 > - **CrossBrowserTesting** → discontinuado por SmartBear en julio 2023; lo sustituye **LambdaTest** (mismo rol, adopción vigente).
 > - **Recheck** → sin mantenimiento activo; lo sustituye la **comparación visual nativa de Playwright**, que ya usamos en el stack.
@@ -54,7 +41,6 @@
 > - **Newman** → sigue vigente y es el que usamos (no requiere cuenta); se menciona **Postman CLI** como su sucesor oficial.
 > - Se agregan **Maestro** (móvil, estándar emergente) y **mutmut** (mutación en Python, coherente con los labs del curso).
 
->>>>>>> upstream/main
 ---
 
 ## 3. El proyecto integrador — "Puerta de Calidad de Release" (*QA Release Gate*)
@@ -106,19 +92,11 @@ Los **retos del curso** se integran directamente al proyecto: Reto 1 (Jenkins + 
 ## 5. Cómo está organizada cada sesión de 3h
 
 ```
-<<<<<<< HEAD
-Bloque A (55 min) → Problema real + conceptos mínimos + demo paso a paso
-   ── descanso 5 min ──
-Bloque B (55 min) → Laboratorio guiado con práctica directa en código
-   ── descanso 5 min ──
-Bloque C (60 min) → Ejercicio individual + Mini reto + errores comunes / código limpio
-=======
 Bloque A (45 min) → Problema real + conceptos mínimos + demo paso a paso
    ── descanso 15 min ──
 Bloque B (45 min) → Laboratorio guiado con práctica directa en código
    ── descanso 15 min ──
 Bloque C (45 min) → Ejercicio individual + Mini reto + errores comunes / código limpio → salida
->>>>>>> upstream/main
 ```
 
 ## 6. Estructura de carpetas del repo

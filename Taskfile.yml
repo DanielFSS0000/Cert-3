@@ -14,12 +14,6 @@ tasks:
       - uv sync
 
   test:design:
-<<<<<<< HEAD
-    desc: "Sesión 1 — suite de técnicas de diseño: EP, BVA, decisión y pairwise"
-    dir: "{{.DESIGN_LAB}}"
-    cmds:
-      - uv run pytest -v
-=======
     desc: "S1 — Suite de técnicas de diseño: EP, BVA, decisión y pairwise"
     dir: "{{.DESIGN_LAB}}"
     cmds:
@@ -52,4 +46,3 @@ tasks:
     cmds:
       - npx --yes newman run postman/s3_crud_jsonplaceholder.postman_collection.json
         --environment postman/jsonplaceholder.postman_environment.json
->>>>>>> upstream/main
