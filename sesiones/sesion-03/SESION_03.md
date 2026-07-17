@@ -332,6 +332,14 @@ pm.test('Los 100 posts cumplen el contrato', function () {
 
 **Entrega:** el archivo `.json` exportado de tu colección. Se revisa corriéndolo con Newman: si sale `0 failed`, está aprobado.
 
+**Entrega realizada:** se agregó al repositorio la colección exportada `proyecto-integrador/api-tests/postman/RETO_S3_Daniel_F.Sandoval -LMS.postman_collection.json`, correspondiente al reto `RETO_S3_Daniel_F.Sandoval`. La colección incluye los 5 requests obligatorios sobre `/users` y el request bonus `GET /users/999999`.
+
+Comando de validación con Newman:
+
+```bash
+npx.cmd --yes newman run "postman\RETO_S3_Daniel_F.Sandoval -LMS.postman_collection.json" --environment postman\jsonplaceholder.postman_environment.json
+```
+
 ---
 
 ## Errores comunes
@@ -358,3 +366,4 @@ task test:api:postman
 ```
 
 **Próxima sesión:** los mismos tests de API… pero en **Python puro** con `httpx` y `pytest`. Adiós interfaz gráfica, hola código. 🐍
+
