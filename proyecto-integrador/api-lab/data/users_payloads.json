@@ -1,0 +1,26 @@
+[
+  {
+    "caso": "usuario_qa",
+    "payload": {
+      "name": "Usuario QA",
+      "username": "usuario.qa",
+      "email": "usuario.qa@cert3.test"
+    }
+  },
+  {
+    "caso": "usuario_automatizador",
+    "payload": {
+      "name": "Usuario Automatizador",
+      "username": "usuario.automatizador",
+      "email": "automatizador@cert3.test"
+    }
+  },
+  {
+    "caso": "usuario_api",
+    "payload": {
+      "name": "Usuario API",
+      "username": "usuario.api",
+      "email": "api@cert3.test"
+    }
+  }
+]
